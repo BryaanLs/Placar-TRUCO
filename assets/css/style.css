@@ -1,0 +1,116 @@
+:root {
+    --padding: 3rem;
+    --branco: #ffffff;
+    --primary-color: #151515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* font-family: 'Roboto Mono',
+monospace;
+font-family: 'Source Sans Pro',
+sans-serif; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Changa', sans-serif;
+
+}
+
+a {
+    font-family: 'Roboto Mono',
+        monospace;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+@keyframes link-animation {
+
+    0% {
+        -moz-transform: scale(1.0);
+    }
+
+    100% {
+        -moz-transform: scale(2.0);
+    }
+
+    0% {
+        -moz-transform: scale(3.0);
+    }
+
+}
+
+.section {
+    min-height: 100vh;
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-main {
+    background-image: url(/assets/img/bg-main.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--branco);
+}
+
+.table {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.table a {
+    text-decoration: none;
+    font-size: 5rem;
+    padding: var(--padding);
+    font-weight: bold;
+    color: var(--branco);
+    box-shadow: 0 0 15px var(--branco);
+    border-radius: 2rem;
+    animation: link-animation 1s infinite;
+    display: block;
+}
+
+.table a:hover {
+    transition: all 300ms ease-in-out;
+    background-color: #ffffff;
+    transform: scale(130%);
+    color: var(--primary-color);
+}
