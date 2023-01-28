@@ -206,11 +206,14 @@ h6 {
     padding: 1rem;
     outline: none;
     color: var(--branco);
-    box-shadow: 0 0 5px 2px var(--branco);
+    border-bottom: none;
+    border-top: none;
+    border-left: 3px solid var(--vermelho);
+    border-right: 3px solid var(--vermelho);
     border-radius: 3rem;
     width: 40%;
     font-size: 6rem;
-    border: none;
+
 }
 
 
