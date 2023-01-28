@@ -123,8 +123,9 @@ h6 {
     outline: none;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--branco);
-    border-radius: 0.2rem;
+    /* border-bottom: 1px solid var(--branco); */
+    box-shadow: 0 0 5px var(--branco);
+    border-radius: 1rem;
     color: var(--branco);
     font-size: 2rem;
     caret-color: var(--branco);
@@ -132,10 +133,10 @@ h6 {
 
 .table label {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.table input:focus, .table input:hover, .table input:clicked{
+.table input:focus {
     transition: all 300ms ease-in-out;
     box-shadow: 0 0 10px 5px var(--vermelho);
     border-bottom: none;
