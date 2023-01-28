@@ -274,7 +274,7 @@ h6 {
     transform: scale(115%);
 }
 
-.maoDeOnze #score1 {
+.maoDeOnze {
     animation: maoDe11 1s alternate-reverse infinite;
 
 }
@@ -286,8 +286,8 @@ h6 {
 
     from {
         background-color: blue;
-        color: var(--primary-color);
-        transform: scale(105%);
+        /* color: var(--primary-color); */
+        transform: scale(115%);
     }
 }
 
