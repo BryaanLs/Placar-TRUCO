@@ -131,12 +131,12 @@ h6 {
 
 .table label {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 
 .table a {
-    margin-top: 1rem;
+
     padding: 1rem;
     text-align: center;
     color: var(--branco);
@@ -149,6 +149,134 @@ h6 {
 
 .table a:hover {
     transition: all 300ms ease-in-out;
+    transform: scale(105%);
     background-color: var(--branco);
     color: var(--primary-color);
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: var(--padding);
+    width: 80vw;
+    min-height: 80vh;
+}
+
+.team {
+    width: 80vw;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    backdrop-filter: blur(0.5rem);
+}
+
+.team h1 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.team input,
+.team button {
+    color: var(--branco);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#team1-play,
+#team2-play {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    /* background-color: var(--vermelho); */
+    border-radius: 1rem;
+    border: none;
+}
+
+#score1,
+#score2 {
+    padding: 1rem;
+    outline: none;
+    background-color: #ffffff;
+    color: #151515;
+    width: 40%;
+    font-size: 4rem;
+}
+
+
+.team input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--branco);
+}
+
+.btns {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns button {
+    background-color: transparent;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid var(--);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.btns button:nth-child(1),
+.btns button:nth-child(2) {
+    background-color: var(--branco);
+
+}
+
+
+.btns button:nth-child(3) {
+    background-color: rgb(12, 222, 156);
+
+}
+
+.btns button:nth-child(4) {
+    background-color: orange;
+
+}
+
+.btns button:nth-child(5) {
+    background-color: green;
+
+}
+
+.btns button:nth-child(6) {
+    background-color: var(--vermelho);
+
+}
+
+@media (max-width: 800px) {
+    .score {
+        flex-direction: column;
+    }
+
+    .team {
+        margin-bottom: 3rem;
+    }
+
+    .btns {
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+
+    }
 }

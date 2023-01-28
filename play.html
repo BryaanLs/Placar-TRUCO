@@ -18,12 +18,40 @@
 </head>
 
 <body>
-    <section class="section bg-main">
-        <div class="table">
-            <input id="team1-play" type="text" readonly name="txtstart">
-            <input id="team2-play" type="text" readonly name="txtstart">
+    <div class="section bg-main">
+        <div class="score main-content">
+            <div class="team">
+                <h1>Team</h1>
+                <input id="team1-play" type="text" readonly>
+                <input type="text" id="score1" value="1" readonly>
+                <div class="btns">
+                    <button>+1</button>
+                    <button>+3</button>
+                    <button>+6</button>
+                    <button>+9</button>
+                    <button>+12</button>
+                    <button>zerar</button>
+                </div>
+            </div>
+
+
+            <div class="team">
+                <h1>Team</h1>
+                <input id="team2-play" type="text" readonly>
+                <input type="text" id="score2" value="11" readonly>
+                <div class="btns">
+                    <button>+1</button>
+                    <button>+3</button>
+                    <button>+6</button>
+                    <button>+9</button>
+                    <button>+12</button>
+                    <button>zerar</button>
+                </div>
+
+            </div>
+
         </div>
-    </section>
+    </div>
 
     <script src="assets/js/getTeams.js"></script>
 </body>
