@@ -214,6 +214,7 @@ h6 {
     border-left: 3px solid var(--branco);
     border-right: 3px solid var(--branco);
     border-radius: 3rem;
+    margin-bottom: 3rem;
     width: 40%;
     font-size: 6rem;
 
@@ -228,18 +229,18 @@ h6 {
 
 .btns {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+
 }
 
 .btns button {
     width: 8rem;
     font-size: 1.8rem;
     background-color: var(--branco);
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-right: 1rem;
     cursor: pointer;
     border: none;
@@ -318,4 +319,11 @@ h6 {
         margin-bottom: 2rem;
     }
 
+}
+
+@media (max-width: 400px) {
+    .btns button {
+        font-size: 1.6rem;
+        width: 7rem;
+    }
 }
