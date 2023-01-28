@@ -273,17 +273,41 @@ h6 {
 
 
 @media (max-width: 800px) {
-    .score {
+
+
+    .score,
+    .section {
         flex-direction: column;
+        padding: 0;
     }
 
     .team {
-        margin-bottom: 3rem;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .team input {
+        padding: 0;
     }
 
     .btns {
-        flex-wrap: wrap;
-        padding-bottom: 2rem;
-
+        flex-flow: row nowrap;
+        padding: 0;
+        max-width: 80%;
     }
+
+    .btns button {
+        flex-flow: row nowrap;
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        width: 80%;
+    }
+
+    #team1-play,
+    #team2-play {
+        margin-bottom: 2rem;
+    }
+
 }
