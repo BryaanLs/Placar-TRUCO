@@ -236,7 +236,8 @@ h6 {
 }
 
 .btns button {
-    font-size: 2rem;
+    width: 8rem;
+    font-size: 1.8rem;
     background-color: var(--branco);
     margin-top: 3rem;
     margin-right: 1rem;
@@ -279,6 +280,7 @@ h6 {
     .section {
         flex-direction: column;
         padding: 0;
+        justify-content: center;
     }
 
     .team {
@@ -294,15 +296,21 @@ h6 {
         flex-flow: row nowrap;
         padding: 0;
         max-width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     .btns button {
-        flex-flow: row nowrap;
-        padding: 0.7rem;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        margin-top: 0;
-        width: 80%;
+        margin: 0 auto;
+
+        /* padding: 0.9rem; */
+        /* font-size: 1.2rem; */
+
+
     }
 
     #team1-play,
