@@ -122,9 +122,7 @@ h6 {
     margin-bottom: 8rem;
     outline: none;
     background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-bottom: 1px solid var(--branco);
     border-radius: 0.2rem;
     color: var(--branco);
