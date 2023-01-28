@@ -125,7 +125,7 @@ function addDoze(score) {
 }
 
 function zerarScore(score) {
-    score.value = parseInt(score1.value) + score.value;
+    score.value = 0;
 
     if (parseInt(score.value) > 12) {
         score.value = 0;
