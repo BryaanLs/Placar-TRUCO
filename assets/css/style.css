@@ -206,6 +206,7 @@ h6 {
 
 #score1,
 #score2 {
+
     padding: 1rem;
     outline: none;
     color: var(--branco);
@@ -273,6 +274,23 @@ h6 {
     transform: scale(115%);
 }
 
+.maoDeOnze #score1 {
+    animation: maoDe11 1s alternate-reverse infinite;
+
+}
+
+@keyframes maoDe11 {
+    to {
+        background-color: transparent;
+    }
+
+    from {
+        background-color: blue;
+        color: var(--primary-color);
+        transform: scale(105%);
+    }
+}
+
 
 @media (max-width: 800px) {
 
@@ -281,12 +299,18 @@ h6 {
     .section {
         flex-direction: column;
         padding: 0;
-        justify-content: center;
+
+    }
+
+    .section {
+        justify-content: start;
+        padding-top: 2rem;
     }
 
     .team {
         padding: 0;
         margin-bottom: 1rem;
+        margin-right: 0;
     }
 
     .team input {
