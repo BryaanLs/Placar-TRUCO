@@ -281,11 +281,12 @@ h6 {
 
 @keyframes maoDe11 {
     to {
-        background-color: transparent;
+        background-image: linear-gradient(to right, var(--vermelho), var(--primary-color));
+        opacity: 0.5;
     }
 
     from {
-        background-color: blue;
+        background-image: linear-gradient(to right, var(--vermelho), var(--primary-color));
         /* color: var(--primary-color); */
         transform: scale(115%);
     }

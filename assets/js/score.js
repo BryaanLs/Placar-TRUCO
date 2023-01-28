@@ -66,11 +66,11 @@ function placar(score, lista) {
 function addUm(score) {
     score.value++;
     if (parseInt(score.value) == 11) {
-        score1.classList.add('maoDeOnze');
+        score.classList.add('maoDeOnze');
     }
     if (parseInt(score.value) > 12) {
         score.value = 0;
-        score1.classList.remove('maoDeOnze');
+        score.classList.remove('maoDeOnze');
     }
     return score.value;
 }
@@ -128,29 +128,9 @@ function addDoze(score) {
 
 function zerarScore(score) {
     score.value = 0;
-
     score.classList.remove('maoDeOnze');
-
     return score.value;
 }
 
 placar(score1, listaBtn1);
 placar(score2, listaBtn2);
-
-
-
-// function venceu() {
-//     const win = document.querySelector('.score');
-//     const msgWin = `<p style = "text-align: center; background-color: var(--vermelho); font-size: 3rem;">${listTeams[0]}Você venceu!, Atualizando a pagina</p>`;
-//     win.innerHTML = msgWin;
-//     setTimeout(() => {
-//         location.reload();
-//     }, 3000);
-// }
-
-
-// const listBtn = document.getElementsByTagName('button');
-
-// console.log(listBtn);
-
-
