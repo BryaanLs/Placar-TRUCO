@@ -134,3 +134,5 @@ function zerarScore(score) {
 
 placar(score1, listaBtn1);
 placar(score2, listaBtn2);
+
+
