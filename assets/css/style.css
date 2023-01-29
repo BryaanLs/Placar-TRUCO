@@ -292,20 +292,18 @@ h6 {
     }
 }
 
-
 @media (max-width: 800px) {
-
 
     .score,
     .section {
         flex-direction: column;
         padding: 0;
-
     }
 
     #score1,
     #score2 {
         font-size: 3rem;
+        width: 10rem;
     }
 
     .section {
@@ -317,6 +315,8 @@ h6 {
         padding: 0;
         margin-bottom: 1rem;
         margin-right: 0;
+        /* background-color: rgba(133, 123, 123, 0.184); */
+        backdrop-filter: blur(5rem);
     }
 
     .team input {
@@ -337,16 +337,12 @@ h6 {
 
     .btns button {
         margin: 0 auto;
-
-        /* padding: 0.9rem; */
-        /* font-size: 1.2rem; */
-
-
     }
 
     #team1-play,
     #team2-play {
         margin-bottom: 2rem;
+        border-radius: 0;
     }
 
 }
