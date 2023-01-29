@@ -315,8 +315,7 @@ h6 {
         padding: 0;
         margin-bottom: 1rem;
         margin-right: 0;
-        /* background-color: rgba(133, 123, 123, 0.184); */
-        backdrop-filter: blur(5rem);
+        background-color: rgba(133, 123, 123, 0.184);
     }
 
     .team input {
